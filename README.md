@@ -11,13 +11,16 @@ Human Resource Management System frontend built with Next.js and Tailwind CSS.
 ## Tech Stack
 - Next.js (App Router)
 - Tailwind CSS v4
+- prettier
 - lucide-react icons
+- Tanstack Table
+- flatcharts
 
 ## Setup
 
 ```bash
-git clone https://github.com/<username>/<repo-name>.git
-cd <repo-name>
+git clone https://github.com/adarsh-kumar123/hrms-frontend.git
+cd hrms-frontend
 npm install
 cp .env.example .env.local
 npm run dev
