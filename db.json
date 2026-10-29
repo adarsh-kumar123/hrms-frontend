@@ -1,0 +1,108 @@
+{
+  "employee": {
+    "totalEmployees": { "value": 128, "change": 5, "trend": "up", "sparkline": [60, 70, 65, 80, 90, 85, 100] },
+    "presentToday": { "value": 104, "change": 8, "trend": "up", "sparkline": [50, 60, 55, 70, 65, 85, 95] },
+    "onLeave": { "value": 8, "change": 6, "trend": "up", "sparkline": [30, 45, 40, 55, 50, 60, 58] },
+    "pendingLeaveRequests": { "value": 6, "change": 5, "trend": "up", "sparkline": [20, 30, 40, 35, 50, 60, 70] },
+    "monthlyPayroll": { "value": 1280000, "display": "₹12.8L", "change": 12, "trend": "up", "sparkline": [30, 50, 40, 60, 55, 75, 65] }
+  },
+
+  "salesRevenue": [
+    { "id": 1, "date": "2025-10-06", "day": "Mon", "label": "Oct 6", "value": 75 },
+    { "id": 2, "date": "2025-10-07", "day": "Tue", "label": "Oct 7", "value": 100 },
+    { "id": 3, "date": "2025-10-08", "day": "Wed", "label": "Oct 8", "value": 90 },
+    { "id": 4, "date": "2025-10-09", "day": "Thu", "label": "Oct 9", "value": 120 },
+    { "id": 5, "date": "2025-10-10", "day": "Fri", "label": "Oct 10", "value": 92 },
+    { "id": 6, "date": "2025-10-11", "day": "Sat", "label": "Oct 11", "value": 120 },
+    { "id": 7, "date": "2025-10-12", "day": "Sun", "label": "Oct 12", "value": 105 }
+  ],
+
+  "leaveRequests": [
+    { "id": 1, "employeeId": 1, "employeeName": "Rohit Sharma", "designation": "Frontend Developer", "avatar": "/avatars/rohit.png", "leaveType": "Sick Leave", "from": "2025-10-10", "to": "2025-10-11", "status": "Pending" },
+    { "id": 2, "employeeId": 2, "employeeName": "Priya Singh", "designation": "HR Executive", "avatar": "/avatars/priya.png", "leaveType": "Casual Leave", "from": "2025-10-08", "to": "2025-10-08", "status": "Approved" },
+    { "id": 3, "employeeId": 3, "employeeName": "Amit Verma", "designation": "Backend Developer", "avatar": "/avatars/amit.png", "leaveType": "Earned Leave", "from": "2025-10-15", "to": "2025-10-17", "status": "Pending" },
+    { "id": 4, "employeeId": 4, "employeeName": "Sneha Kapoor", "designation": "UI/UX Designer", "avatar": "/avatars/sneha.png", "leaveType": "Medical Leave", "from": "2025-10-06", "to": "2025-10-09", "status": "Rejected" },
+    { "id": 5, "employeeId": 5, "employeeName": "Vikas Yadav", "designation": "Testing Engineer", "avatar": "/avatars/vikas.png", "leaveType": "Casual Leave", "from": "2025-10-14", "to": "2025-10-14", "status": "Approved" }
+  ],
+
+  "employees": [
+    { "id": 1, "employeeId": "EMP00123", "name": "Rohit Sharma", "email": "rohit.sharma@company.com", "phone": "+91 98765 43210", "department": "Development", "designation": "Frontend Developer", "location": "Noida", "status": "Active", "avatar": "/avatars/rohit.png" },
+    { "id": 2, "employeeId": "EMP00124", "name": "Priya Singh", "email": "priya.singh@company.com", "phone": "+91 87654 32109", "department": "HR", "designation": "HR Executive", "location": "Noida", "status": "Active", "avatar": "/avatars/priya.png" },
+    { "id": 3, "employeeId": "EMP00125", "name": "Amit Verma", "email": "amit.verma@company.com", "phone": "+91 76543 21098", "department": "Backend", "designation": "Backend Developer", "location": "Meerut", "status": "Active", "avatar": "/avatars/amit.png" },
+    { "id": 4, "employeeId": "EMP00126", "name": "Sneha Kapoor", "email": "sneha.kapoor@company.com", "phone": "+91 65432 10987", "department": "Design", "designation": "UI/UX Designer", "location": "Noida", "status": "Active", "avatar": "/avatars/sneha.png" },
+    { "id": 5, "employeeId": "EMP00127", "name": "Vikas Yadav", "email": "vikas.yadav@company.com", "phone": "+91 54321 09876", "department": "Testing", "designation": "QA Engineer", "location": "London", "status": "Active", "avatar": "/avatars/vikas.png" },
+    { "id": 6, "employeeId": "EMP00128", "name": "Anjali Mehta", "email": "anjali.mehta@company.com", "phone": "+91 43210 98765", "department": "Marketing", "designation": "Digital Marketer", "location": "Noida", "status": "On Leave", "avatar": "/avatars/anjali.png" },
+    { "id": 7, "employeeId": "EMP00129", "name": "Saurabh Kumar", "email": "saurabh.kumar@company.com", "phone": "+91 32109 87654", "department": "Sales", "designation": "Sales Executive", "location": "Meerut", "status": "Active", "avatar": "/avatars/saurabh.png" },
+    { "id": 8, "employeeId": "EMP00130", "name": "Neha Gupta", "email": "neha.gupta@company.com", "phone": "+91 21098 76543", "department": "Finance", "designation": "Accountant", "location": "London", "status": "Active", "avatar": "/avatars/neha.png" },
+    { "id": 9, "employeeId": "EMP00131", "name": "Rohan Das", "email": "rohan.das@company.com", "phone": "+91 10987 65432", "department": "Operations", "designation": "Operations Executive", "location": "Noida", "status": "Inactive", "avatar": "/avatars/rohan.png" },
+    { "id": 10, "employeeId": "EMP00132", "name": "Pooja Sharma", "email": "pooja.sharma@company.com", "phone": "+91 09876 54321", "department": "Support", "designation": "Support Executive", "location": "Meerut", "status": "Active", "avatar": "/avatars/pooja.png" }
+  ],
+
+  "departments": ["Development", "Backend", "Design", "Testing", "HR", "Marketing", "Sales", "Finance", "Operations", "Support"],
+  "locations": ["Noida", "Meerut", "London"],
+  "employeeStatuses": ["Active", "On Leave", "Inactive"],
+
+  "myProfile": {
+    "id": 1,
+    "employeeId": "EMP00123",
+    "name": "Rohit Sharma",
+    "designation": "Frontend Developer",
+    "department": "Development",
+    "status": "Active",
+    "avatar": "/avatars/rohit.png",
+    "email": "rohit.sharma@company.com",
+    "phone": "+91 98765 43210",
+    "location": "Noida, Uttar Pradesh",
+    "joiningDate": "2024-10-15",
+    "reportingManager": "Amit Verma",
+    "dob": "1998-04-12",
+    "gender": "Male",
+    "maritalStatus": "Single",
+    "bloodGroup": "B+",
+    "address": "123, Green Park, Sector 62, Noida, Uttar Pradesh - 201309",
+    "emergencyContact": { "name": "Amit Verma", "phone": "+91 98765 43211" },
+    "nationality": "Indian",
+    "panNumber": "ABCDE1234F"
+  },
+
+  "leaveBalance": [
+    { "id": 1, "type": "Casual Leave", "balance": 10, "total": 12 },
+    { "id": 2, "type": "Sick Leave", "balance": 6, "total": 8 },
+    { "id": 3, "type": "Earned Leave", "balance": 10, "total": 15 },
+    { "id": 4, "type": "Medical Leave", "balance": 3, "total": 5 }
+  ],
+
+  "todayAttendance": {
+    "date": "2025-10-06",
+    "status": "Present",
+    "shift": "09:15 AM - 06:30 PM",
+    "checkIn": "09:15 AM",
+    "checkOut": "06:30 PM"
+  },
+
+  "holidays": [
+    { "id": 1, "name": "Gandhi Jayanti", "date": "2025-10-02", "location": "Noida", "type": "Holiday" },
+    { "id": 2, "name": "Dussehra", "date": "2025-10-12", "location": "Noida", "type": "Holiday" },
+    { "id": 3, "name": "Diwali", "date": "2025-10-31", "location": "Noida", "type": "Holiday" },
+    { "id": 4, "name": "Guru Nanak Jayanti", "date": "2025-11-14", "location": "Noida", "type": "Holiday" }
+  ],
+
+  "recentActivity": [
+    { "id": 1, "title": "Attendance Marked", "time": "Today, 09:15 AM", "description": "You have marked your attendance for today.", "color": "green" },
+    { "id": 2, "title": "Salary Slip Generated", "time": "28 Sep 2025", "description": "Your September salary slip is ready.", "color": "blue" },
+    { "id": 3, "title": "Leave Approved", "time": "25 Sep 2025", "description": "Your leave request has been approved.", "color": "green" },
+    { "id": 4, "title": "Profile Updated", "time": "20 Sep 2025", "description": "You updated your personal details.", "color": "green" }
+  ],
+
+  "notifications": [
+    { "id": 1, "message": "New leave request from Rohit Sharma", "read": false },
+    { "id": 2, "message": "New leave request from Amit Verma", "read": false },
+    { "id": 3, "message": "Payroll for October is ready", "read": false }
+  ],
+
+  "profile": {
+    "name": "Admin",
+    "role": "Administrator",
+    "avatar": "/avatars/admin.png"
+  }
+}
