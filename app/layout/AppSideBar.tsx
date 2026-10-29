@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
+import Logo from "@/public/images/Frame237.webp"
 import {
   LayoutDashboard,
   Users,
@@ -21,6 +21,7 @@ import {
   Leaf,
   Sprout,
 } from "lucide-react";
+import Image from "next/image";
 
 type NavItem = {
   name: string;
@@ -43,29 +44,29 @@ const navSections: SidebarSection[] = [
   {
     title: "Main Menu",
     items: [
-      { name: "Dashboard", path: "/", icon: <LayoutDashboard />, permission: "dashboard" },
+      { name: "Dashboard", path: "/dashboard", icon: <LayoutDashboard />, permission: "dashboard" },
       { name: "Users & Roles", path: "/users", icon: <Users />, permission: "users" },
       { name: "Employees", path: "/employees", icon: <UserRound />, permission: "employees" },
     ],
   },
-//   {
-//     title: "HR Management",
-//     items: [
-//       { name: "Attendance", path: "/attendance", icon: <CalendarCheck />, permission: "attendance" },
-//       { name: "Holiday Calendar", path: "/holiday-calendar", icon: <CalendarDays />, permission: "holidays" },
-//       { name: "Leaves", path: "/leaves", icon: <Plane />, permission: "leaves" },
-//       { name: "Salary Slips", path: "/salary-slips", icon: <Wallet />, permission: "salary" },
-//       { name: "Devices", path: "/devices", icon: <Laptop />, permission: "devices" },
-//       { name: "Documents", path: "/documents", icon: <FileText />, permission: "documents" },
-//     ],
-//   },
-//   {
-//     title: "Support",
-//     items: [
-//       { name: "Notifications", path: "/notifications", icon: <Bell />, permission: "notifications" },
-//       { name: "Settings", path: "/settings", icon: <Settings />, permission: "settings" },
-//     ],
-//   },
+  //   {
+  //     title: "HR Management",
+  //     items: [
+  //       { name: "Attendance", path: "/attendance", icon: <CalendarCheck />, permission: "attendance" },
+  //       { name: "Holiday Calendar", path: "/holiday-calendar", icon: <CalendarDays />, permission: "holidays" },
+  //       { name: "Leaves", path: "/leaves", icon: <Plane />, permission: "leaves" },
+  //       { name: "Salary Slips", path: "/salary-slips", icon: <Wallet />, permission: "salary" },
+  //       { name: "Devices", path: "/devices", icon: <Laptop />, permission: "devices" },
+  //       { name: "Documents", path: "/documents", icon: <FileText />, permission: "documents" },
+  //     ],
+  //   },
+  //   {
+  //     title: "Support",
+  //     items: [
+  //       { name: "Notifications", path: "/notifications", icon: <Bell />, permission: "notifications" },
+  //       { name: "Settings", path: "/settings", icon: <Settings />, permission: "settings" },
+  //     ],
+  //   },
 ];
 
 type Props = {
@@ -96,25 +97,27 @@ export default function Sidebar({ user }: Props) {
   }, [pathname]);
 
   const itemClass = (active: boolean) =>
-    `w-full flex items-center gap-3 rounded-lg border-l-4 px-3 py-2.5 text-sm font-medium transition-colors duration-150 ${
-      active
-        ? "border-primary-600 bg-primary-100 text-primary-700"
-        : "border-transparent text-foreground/80 hover:bg-primary-50"
+    `w-full flex items-center gap-3 rounded-lg border-l-4 px-3 py-2.5 text-sm font-medium transition-colors duration-150 ${active
+      ? "border-primary-600 bg-primary-100 text-primary-700"
+      : "border-transparent text-foreground/80 hover:bg-primary-50"
     }`;
 
   const iconClass = (active: boolean) =>
-    `flex h-5 w-5 shrink-0 items-center justify-center ${
-      active ? "text-primary-600" : "text-foreground/70"
+    `flex h-5 w-5 shrink-0 items-center justify-center ${active ? "text-primary-600" : "text-foreground/70"
     }`;
 
   return (
     <aside className="fixed inset-y-0 left-0 z-30 flex w-64 flex-col border-r border-border bg-sidebar px-3">
       {/* Logo */}
       <Link href="/" className="flex items-center gap-3 px-2 py-5">
-        <Leaf className="h-9 w-9 text-primary-600" />
+        <Image
+          src={Logo}
+          alt="Figmanet logo"
+          width={35}
+        />
         <div className="leading-tight">
-          <p className="text-xl font-bold">HRMS</p>
-          <p className="text-xs text-muted">Human Resource Management</p>
+          <p className="text-xl font-bold">FSPL</p>
+          <p className="text-xs text-muted">Figmanet Solutions Pvt Ltd </p>
         </div>
       </Link>
 
@@ -163,11 +166,10 @@ export default function Sidebar({ user }: Props) {
                                   <li key={child.path}>
                                     <Link
                                       href={child.path}
-                                      className={`ml-3 block rounded-lg px-3 py-2 text-sm transition-colors ${
-                                        childActive
+                                      className={`ml-3 block rounded-lg px-3 py-2 text-sm transition-colors ${childActive
                                           ? "bg-primary-100 font-medium text-primary-700"
                                           : "text-muted hover:bg-primary-50 hover:text-primary-700"
-                                      }`}
+                                        }`}
                                     >
                                       {child.name}
                                     </Link>

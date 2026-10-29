@@ -6,7 +6,7 @@ export default function NotFound() {
       <p className="text-5xl font-bold text-primary-600">404</p>
       <h2 className="text-xl font-semibold">Page not found</h2>
       <p className="text-sm text-muted">
-        Ye page abhi available nahi hai ya hata diya gaya hai.
+        This page is not available.
       </p>
       <Link
         href="/"

@@ -10,8 +10,11 @@ const instrument = Instrument_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "HRMS",
+    default: "FSPL | HRMS",
     template: "%s | HRMS",
+  },
+  icons: {
+    icon: "/images/Frame237.webp",
   },
   description: "Human Resource Management System",
 };
